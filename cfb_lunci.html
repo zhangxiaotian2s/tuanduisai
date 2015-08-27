@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>团体赛</title>
+		<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1,user-scalable=0, minimum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body class="bk_gray">
+
+		<!--nav-->
+		<div class="wrap">
+			<nav class="nav1 row">
+				<div class="col-xs-3">
+					<a href="">成绩</a>
+				</div>
+				<div class="col-xs-3">
+					<a href="#">公告</a>
+				</div>
+				<div class="col-xs-3">
+					<a href="#">新闻</a>
+				</div>
+				<div class="col-xs-3">
+					<a href="" class="current">出发表</a>
+				</div>
+			</nav>
+			<!--//nav-->
+			<!--tab -->
+			<div class="tab_box">
+				<h1>
+			 		轮次:
+			 	</h1>
+				<div id="tab_nav_nr">
+					<ul id="tab_nav">
+						<li class="current">周六上午个人赛</li>
+						<li>周日下午四人赛</li>
+						<li>周一下午四人赛</li>
+						<li>周一上午个人赛</li>
+					</ul>
+				</div>
+
+			</div>
+			<div id="tab_content" class="tab_content">
+				<div class="row">
+					<div class="cfb_lc_time">TIME</div>
+					<div class="cfb_lc_palyer">PLAYER</div>
+				</div>
+				<div class="tab_content_child current">
+					<table class="cfb_lc_table">
+						<tr>
+							<td width="20%">07:27</td>
+							<td width="40%">痰桶</td>
+							<td width="40%">马嵬驿</td>
+						</tr>
+						<tr>
+							<td width="20%">07:27</td>
+							<td width="40%">痰桶
+								<br />马桶</td>
+							<td width="40%">马嵬驿</td>
+						</tr>
+					</table>
+				</div>
+				<div class="tab_content_child">
+					<table class="cfb_lc_table">
+						<tr>
+							<td width="20%">07:27</td>
+							<td width="40%">痰桶2</td>
+							<td width="40%">马嵬驿</td>
+						</tr>
+						<tr>
+							<td width="20%">07:27</td>
+							<td width="40%">痰桶
+								<br />马桶</td>
+							<td width="40%">马嵬驿</td>
+						</tr>
+					</table>
+				</div>
+				<div class="tab_content_child">
+					<table class="cfb_lc_table">
+						<tr>
+							<td width="20%">07:27</td>
+							<td width="40%">痰桶3</td>
+							<td width="40%">马嵬驿</td>
+						</tr>
+						<tr>
+							<td width="20%">07:27</td>
+							<td width="40%">痰桶
+								<br />马桶</td>
+							<td width="40%">马嵬驿</td>
+						</tr>
+					</table>
+				</div>
+				<div class="tab_content_child">
+					<table class="cfb_lc_table">
+						<tr>
+							<td width="20%">07:27</td>
+							<td width="40%">痰桶4</td>
+							<td width="40%">马嵬驿</td>
+						</tr>
+						<tr>
+							<td width="20%">07:27</td>
+							<td width="40%">痰桶
+								<br />马桶</td>
+							<td width="40%">马嵬驿</td>
+						</tr>
+					</table>
+				</div>
+
+			</div>
+			<!--//tab-->
+			<div id="fix_nav">
+				<ul>
+					<li class="z_man">
+						<a href="#" class="current">男子组</a>
+					</li>
+					<li class="z_woman">
+						<a href="#" class="">女子组</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script type="text/javascript" src="js/iscroll.js"></script>
+		<script type="text/javascript" src="js/tab.js"></script>
+		<script>
+			//设置长度 
+			function set_scroll_w(ul_id) {
+				var _ul = document.querySelector(ul_id);
+				_li = _ul.querySelectorAll('li')
+				_li_w = _li[0].clientWidth + 20,
+					_li_l = _li.length;
+				_ul.style.width = (_li_w * _li_l) + 'px'
+			}
+			set_scroll_w('#tab_nav')
+			tab({tabId: '#tab_nav',
+		        tabChild: 'li',
+		        tabContentId: '#tab_content',
+		        tabContentChid: '.tab_content_child',
+		        tabClass: 'current'})
+			var myscroll = new iScroll("tab_nav_nr", {
+				vScroll: false,
+				hScroll: true,
+				bounce: true,
+				hScrollbar: true,
+				hideScrollbar: true
+			});
+		</script>
+	</body>
+
+</html>

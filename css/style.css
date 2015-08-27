@@ -1,0 +1,158 @@
+*{margin: 0; padding: 0; font-family:verdana;
+   /*处理BUG*/
+    -webkit-tap-highlight-color: transparent;  
+    -webkit-appearance: none;   
+    }
+a{ text-decoration: none;}
+li{ list-style: none;}
+a:hover{
+	
+}
+
+/*全局设置字号*/
+html{font-size:10px}
+@media screen and (min-width:320px) and (max-width:375px){html{font-size:13px}}
+@media screen and (min-width:376px) and (max-width:414px){html{font-size:15px}}
+@media screen and (min-width:415px) {html{font-size:18px}}
+/*开启硬件加速*/
+.Ac{
+   -webkit-transform: translate3d(0, 0, 0);
+   -moz-transform: translate3d(0, 0, 0);
+   -ms-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+}
+/*常用配置*/
+.wrap{ max-width: 640px; margin: auto;}
+.bk_grey{ background: #F6F6F6;}
+.clearfix:after {
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+.clear{clear: both;}
+.img-responsive{ display: block;max-width: 100%;height: auto; margin: auto;}
+.img-circle{border-radius:50%}
+.text-left{text-align:left}
+.text-right{text-align:right}
+.text-center{text-align:center}
+.row {
+  width: 100%;
+  clear: both;
+}
+.blank-15{ height: 15px;clear: both; overflow: hidden;}
+.bk_white{ background: #FFFFFF;}
+.bk_gray{ background: #f6f6f6;}
+.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9
+{float:left}
+.col-xs-12{width:100%}
+.col-xs-11{width:91.66666667%}
+.col-xs-10{width:83.33333333%}
+.col-xs-9{width:75%}
+.col-xs-8{width:66.66666667%}
+.col-xs-7{width:58.33333333%}
+.col-xs-6{width:50%}
+.col-xs-5{width:41.66666667%}
+.col-xs-4{width:33.33333333%}
+.col-xs-3{width:25%}
+.col-xs-2{width:16.66666667%}
+.col-xs-1{width:8.33333333%}
+.col-xs-offset-12 {margin-left: 100%;}
+.col-xs-offset-11 {margin-left: 91.66666667%;}
+.col-xs-offset-10 {margin-left: 83.33333333%;}
+.col-xs-offset-9 {margin-left: 75%;}
+.col-xs-offset-8 {margin-left: 66.66666667%;}
+.col-xs-offset-7 {margin-left: 58.33333333%;}
+.col-xs-offset-6 {margin-left: 50%;}
+.col-xs-offset-5 {margin-left: 41.66666667%;}
+.col-xs-offset-4 {margin-left: 33.33333333%;}
+.col-xs-offset-3 {margin-left: 25%;}
+.col-xs-offset-2 {margin-left: 16.66666667%;}
+.col-xs-offset-1 {margin-left: 8.33333333%;}
+.col-xs-offset-0 {margin-left: 0;}
+table,table td{ border:0;border-collapse: collapse;  }
+
+.wrap_nr{ overflow: hidden;background: #f6f6f6;}
+.nav1{ height: 46px; line-height: 46px; border-bottom: #cdcdcd solid 1px; overflow: hidden; background: #FFFFFF;}
+.nav1 div{ text-align: center;}
+.nav1 div a{color: #242424; font-size: 1.2rem;}
+.nav1 div a.current{ color: #FF6666;}
+/*cj_lunci*/
+
+.cj_phb_table_box{ border-bottom:#e0e0e0  solid 1px}
+.cj_phb_h{ text-align: center; font-weight: normal;font-size: 1.2rem; height: 3.0rem; line-height: 3.0rem; background: #e0e0e0; }
+#cj_phb_table{  width: 100%;}
+#cj_phb_table th{ font-size: 0.6rem;  font-weight: normal; border-bottom: #e0e0e0 solid 1px; line-height: 1.4rem;}
+#cj_phb_table td{ height: 4.0rem; text-align: center; border-right: #c1c1c1 solid 1px; }
+#cj_phb_table td:nth-of-type(2),#cj_phb_table td:nth-of-type(6){ border-right: 0px;}
+#cj_phb_table tr:nth-of-type(2n+1){ background: #ffffff;}
+.img_td img{ width: 70%; margin: auto;}
+#cj_phb_table td p{ padding: 0px 5px;}
+
+#fix_nav{ width: 4.2rem;  height:4.2rem; background: #000; border-radius: 2.1rem; opacity: 0.7;
+ position: fixed; right:10px; bottom: 30px;
+}
+#fix_nav  a{ color: #FFFFFF;display: block; text-align: center;width: 90%; margin: auto; line-height: 1.5rem; font-size: 0.8rem;}
+#fix_nav .z_man a{  border-bottom: #FFFFFF solid 1px;  }
+#fix_nav .z_man .current{  font-size: 1.1rem; font-weight: bold; line-height: 1.8rem; padding-top: 0.5rem;}
+#fix_nav .z_woman .current{  font-size: 1.1rem; font-weight: bold; line-height: 1.8rem; padding-bottom: 0.5rem;}
+
+/*cfb_*/
+.tab_box { width: 100%; height: 5.0rem; overflow: hidden; background: #FFFFFF;}
+
+.tab_box h1{  display: block; height: 4.0rem; line-height: 4.0rem; width: 20%; text-align: center; font-weight: normal;  font-size: 1.2rem; float: left; }
+#tab_nav_nr{ float: left; position: relative; width: 80%; height: 4.0rem;}
+#tab_nav{ position: absolute;  }
+#tab_nav li{  float: left; line-height: 3.0rem; height: 3.0rem; margin: 0.5rem; font-size: 1.2rem; padding: 0px 0.5rem;}
+#tab_nav li.current{ border: #fd6f63 solid 1px; border-radius: 4px; color: #fd6f63;}
+.cfb_lc_time,.cfb_lc_palyer{  text-align: center;border-bottom: #e0e0e0 solid 1px; height: 1.8rem; line-height: 1.8rem;}
+.cfb_lc_time{ width: 20%; float: left;}
+.cfb_lc_table{ width: 100%;}
+.cfb_lc_table th,.cfb_lc_table td{ text-align: center;}
+.cfb_lc_table th{font-size: 0.6rem;  font-weight: normal; border-bottom: #e0e0e0 solid 1px; line-height: 1.4rem}
+.cfb_lc_table th.cfb_lc_table_play{ text-align: right;}
+.cfb_lc_table td{ height: 4.0rem; }
+.cfb_lc_table td:nth-of-type(1){ border-right: #e0e0e0 solid 1px;}
+.cfb_lc_table tr:nth-of-type(odd){ background: #FFFFFF; }
+.tab_content{ border-top: #e0e0e0 solid 1px; border-bottom: #e0e0e0 solid 1px;}
+#tab_content .tab_content_child{ display: none;}
+#tab_content .current{ display: block;}
+/*******/
+.section_border{ background: #FFFFFF; border-radius:4px ; width: 92%; margin: auto; padding: 5px 2%;}
+.jfk_person_card{ padding-bottom: 1.0rem;}
+.jfk_person_card h1,.jfk_person_card .sx{ font-size: 1.2rem; line-height: 2.6rem;}
+.jfk_person_card ul li{ line-height: 2.4rem; color: #999999;}
+.jfk_person_card .sx{ float: right;color: #FD6F63;}
+
+.jfk_person_score{ background: #FFFFFF ; border-radius: 4px; width: 96%; margin: auto;}
+.section_blank_2{ height: 2.0rem;clear: both;}
+.jfk_person_score .time{  line-height: 2.0rem; line-height: 2.0rem; padding-left: 2%;}
+
+#jfk_person_score_list{ position: relative; height: 7.2rem;}
+
+.jfk_person_score_nr ul li{ height: 2.4rem; line-height: 2.4rem; padding-left: 5px;}
+.jfk_person_score_nr ul li:nth-of-type(odd){ background: #f0f0f0;}
+.jfk_person_score_nr ul li span{ display: block; float: left; width: 2.0rem; text-align: center; margin: 0px 0.5rem;}
+#jfk_person_score_list ul { width:65rem ; position: absolute; left: 0px;}
+#jfk_person_score_list ul li span{ height:1.6rem ; line-height: 1.6rem;  margin: 0.3rem 0.5rem;}
+.jfb_color_list ul li{ float: left; line-height: 1.7rem; margin:0.5rem }
+.jfb_color_list ul li span{ display: block; width: 0.5rem; height: 0.5rem; float:left; margin:0.5rem 0.3rem;}
+
+.color_1{background: #2d67a0; color: #FFFFFF; border: #2d67a0 solid 1px;}
+.color_2{background: #5ec9ed;  color: #FFFFFF; border: #5ec9ed solid 1px;}
+.color_3{background: #b68220;  color: #FFFFFF; border: #b68220 solid 1px;}
+.color_4{background: #FFFFFF; color: #000000; border: #000000 solid 1px;}
+.color_5{background: #ffcc33; color: #FFFFFF;border: #ffcc33 solid 1px;}
+
+/********/
+.section_blank_1{ height: 1.0rem; overflow: hidden; clear:both; }
+.jfb_team_nav_box{ width:96%; margin: auto; border-radius:4px; height: 4.2rem;}
+.jfb_team_content{ height: 13rem; overflow: hidden;}
+.tab_box_border{ padding:0.5rem 0%; width: 96%;}
+.jfb_team_content_header ul li{ width: 20%;  text-align: center;  line-height: 2.0rem; float: left; border-bottom: #e0e0e0 solid 1px;}
+.tab_content_child table { width: 100%;}
+.tab_content_child table td{  text-align: center; line-height: 2.6rem; border-bottom:#E0E0E0 solid 1px; }
+
+
+

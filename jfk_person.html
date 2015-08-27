@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>团体赛</title>
+		<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1,user-scalable=0, minimum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body class="bk_gray">
+		<div class="wrap">
+			<section class="section_border jfk_person_card clearfix">
+				<div class="col-xs-8">
+					<h1>刘健</h1>
+					<ul>
+						<li>今日: +20</li>
+						<li>总杆: 520</li>
+						<li>成绩: +20</li>
+					</ul>
+				</div>
+				<div class="col-xs-4">
+					<a href="#" class="sx">刷新</a>
+					<div class="col-xs-8 col-xs-offset-4">
+						<img src="images/jfk_img.jpg" class="img-responsive">
+					</div>
+				</div>
+			</section>
+			<div class="section_blank_2"></div>
+			<section class="jfk_person_score">
+				<div class="time">
+					14：00 10号洞出发
+				</div>
+				<div class="row jfk_person_score_nr clearfix">
+					<div class="col-xs-3">
+						<ul>
+							<li>Hole</li>
+							<li>Par</li>
+							<li>strokes</li>
+						</ul>
+					</div>
+					<div class="col-xs-9" id="jfk_person_score_list">
+						<ul>
+							<li>
+								<span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>OUT</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span>TOATL<span></span>
+							</li>
+							<li>
+								<span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span>TOATL<span></span>
+							</li>
+							<li>
+								<span class="color_1">1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span>TOATL<span></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="jfb_color_list row clearfix">
+					<ul>
+						<li><span class="color_1"></span>Eagle or Better</li>
+						<li><span class="color_2"></span>Eagle</li>
+						<li><span class="color_3"></span>Better</li>
+						<li><span class="color_4"></span>Bogey</li>
+						<li><span class="color_5"></span>Double Bogey or Wrost</li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+
+	</body>
+	<script type="text/javascript" src="js/iscroll.js"></script>
+	<script>
+		var myscroll = new iScroll("jfk_person_score_list", {
+			vScroll: false,
+			hScroll: true,
+			bounce: false,
+			hScrollbar: true,
+			hideScrollbar: true
+		});
+	</script>
+
+</html>
+
+</html>
