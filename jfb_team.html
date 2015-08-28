@@ -14,9 +14,24 @@
 	<body class="bk_gray">
 		<div class="wrap">
 			<section class="section_border jfk_person_card clearfix">
-				<div class="col-xs-8">
+				<div class="col-xs-8" id="tab_content_2">
 					<h1>刘健</h1>
-					<ul>
+					<ul class="tab_content_2_child current">
+						<li>今日: +20</li>
+						<li>总杆: 520</li>
+						<li>成绩: +20</li>
+					</ul>
+					<ul class="tab_content_2_child">
+						<li>今日: +202</li>
+						<li>总杆: 520</li>
+						<li>成绩: +20</li>
+					</ul>
+					<ul class="tab_content_2_child">
+						<li>今日: +203</li>
+						<li>总杆: 520</li>
+						<li>成绩: +20</li>
+					</ul>
+					<ul class="tab_content_2_child">
 						<li>今日: +20</li>
 						<li>总杆: 520</li>
 						<li>成绩: +20</li>
@@ -199,8 +214,8 @@
 			 tab({
 				tabId: '#tab_nav',
 				tabChild: 'li',
-				tabContentId: '#tab_content',
-				tabContentChid: '.tab_content_child',
+				tabContentId: '#tab_content,#tab_content_2',
+				tabContentChid: '.tab_content_child,.tab_content_2_child',
 				tabClass: 'current'
 			})
 			var myscroll = new iScroll("tab_nav_nr", {
