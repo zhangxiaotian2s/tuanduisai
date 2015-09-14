@@ -1,0 +1,48 @@
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>JS 点击a标签时自动变换背景-www.jbxue.com</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			li {
+				list-style: none;
+			}
+			.currt {
+				background: blue;
+			}
+			#tab li {
+				display: block;
+				float: left;
+				margin: 10px;
+			}
+			#tab_content li {
+				display: block;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="clMenu">
+			<ul id='tab'>
+				<li class="currt"><a href="#">1</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">1</a></li>
+			</ul>
+		</div>
+		<script>
+			var _url = window.location.href;
+			var _s_url = _url.split('?tab_i=');
+			var _now_tab_i = _s_url[1];
+			var tabli = document.getElementById('tab').children
+			if (_now_tab_i != undefined) {
+				tabli[_now_tab_i].setAttribute('class', 'currt')
+			}else{
+				tabli[0].setAttribute('class', 'currt')
+			}
+		</script>
+	</body>

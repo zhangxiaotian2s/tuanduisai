@@ -222,15 +222,11 @@
 					hideScrollbar: true
 				});
 			}
-			var arrdata=[['0','2','3'],['1','2','3'],['2','2','3'],['3','2','3']]
+			var arrdata=['1','2','3','4']
 			$('#tab_nav li').bind('tap',function(){
-				var _data_i=$(this).attr('data-i')
-				var  team_score_li= $('#team_score li');
-				team_score_li.each(function(){
-					var i=$(this).index()
-					$(this).children('span').text(arrdata[_data_i][i])
-				})
-				
+				var _data_i=$(this).attr('data-i');
+				var  team_score_li= $('#team_score li').eq(0).children('span');
+				     team_score_li.text(arrdata[_data_i]);
 			})
 		</script>
 

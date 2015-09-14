@@ -12,10 +12,12 @@ var tab = function(mycfg) {
 		tabContent = $(cfg.tabContentId),
 		tabContetChild = tabContent.children(cfg.tabContentChid);
 	var tabFn = function() {
-		tabBtnChild.bind('tap', function() {
+		tabBtnChild.bind('click', function() {
 			var _i = $(this).index();
 			$(this).addClass(cfg.tabClass).siblings(cfg.tabChild).removeClass(cfg.tabClass)
 			tabContetChild.eq(_i).show().siblings(cfg.tabContentChid).hide()
+			
+			
 		})
 	}
 	tabFn()

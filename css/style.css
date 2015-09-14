@@ -95,17 +95,18 @@ table,table td{ border:0;border-collapse: collapse;  }
 }
 #fix_nav  a{ color: #FFFFFF;display: block; text-align: center;width: 90%; margin: auto; line-height: 1.5rem; font-size: 0.8rem;}
 #fix_nav .z_man a{  border-bottom: #FFFFFF solid 1px;  }
-#fix_nav .z_man .current{  font-size: 1.1rem; font-weight: bold; line-height: 1.8rem; padding-top: 0.5rem;}
-#fix_nav .z_woman .current{  font-size: 1.1rem; font-weight: bold; line-height: 1.8rem; padding-bottom: 0.5rem;}
-
+#fix_nav .z_man.current{  line-height: 1.8rem; padding-top: 1.0rem;}
+#fix_nav .z_woman.current{  line-height: 1.8rem; padding-bottom: 0.5rem;}
+#fix_nav .z_man.current a{font-size: 1.2rem;}
+#fix_nav .z_woman.current a{font-size: 1.2rem;}
 /*cfb_*/
 .tab_box { width: 100%; height: 5.0rem; overflow: hidden; background: #FFFFFF;}
 
 .tab_box h1{  display: block; height: 4.0rem; line-height: 4.0rem; width: 20%; text-align: center; font-weight: normal;  font-size: 1.2rem; float: left; }
-#tab_nav_nr{ float: left; position: relative; width: 80%; height: 4.0rem;}
-#tab_nav{ position: absolute;  }
-#tab_nav li{  float: left; line-height: 3.0rem; height: 3.0rem; margin: 0.5rem; font-size: 1.2rem; padding: 0px 0.5rem;}
-#tab_nav li.current{ border: #fd6f63 solid 1px; border-radius: 4px; color: #fd6f63;}
+.tab_nav_nr{ float: left; position: relative; width: 80%; height: 4.0rem;}
+.tab_nav{ position: absolute;  }
+.tab_nav li{  float: left; line-height: 3.0rem; height: 3.0rem; margin: 0.5rem; font-size: 1.2rem; padding: 0px 0.5rem;}
+.tab_nav li.current{ border: #fd6f63 solid 1px; border-radius: 4px; color: #fd6f63;}
 .cfb_lc_time,.cfb_lc_palyer{  text-align: center;border-bottom: #e0e0e0 solid 1px; height: 1.8rem; line-height: 1.8rem;}
 .cfb_lc_time{ width: 20%; float: left;}
 .cfb_lc_table{ width: 100%;}
@@ -116,8 +117,11 @@ table,table td{ border:0;border-collapse: collapse;  }
 .cfb_lc_table td:nth-of-type(1){ border-right: #e0e0e0 solid 1px;}
 .cfb_lc_table tr:nth-of-type(odd){ background: #FFFFFF; }
 .tab_content{ border-top: #e0e0e0 solid 1px; border-bottom: #e0e0e0 solid 1px;}
-#tab_content .tab_content_child{ display: none;}
-#tab_content .current{ display: block;}
+.tab_content .tab_content_child{ display: none;}
+.tab_content .current{ display: block;}
+
+#tab_team_content div.tab_team_child{ display: none;}
+#tab_team_content div.tab_team_child.current{ display: block;}
 /*******/
 .section_border{ background: #FFFFFF; border-radius:4px ; width: 92%; margin: auto; padding: 5px 2%;}
 .jfk_person_card{ padding-bottom: 1.0rem;}
