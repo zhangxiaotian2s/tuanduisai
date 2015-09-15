@@ -31,8 +31,8 @@
 			</nav>
 			<!--//nav-->
 			<!--tab -->
-			<div id="tab_team_content">
-				<div class="tab_team_child current">
+			<div id="tab_group_content">
+				<div class="tab_group_child current">
 					<div class="tab_box">
 						<h1>
 			 		轮次:
@@ -113,10 +113,9 @@
 								</tr>
 							</table>
 						</div>
-
 					</div>
 				</div>
-				<div class="tab_team_child">
+				<div class="tab_group_child">
 					<div class="tab_box">
 						<h1>
 			 		     轮次:
@@ -201,7 +200,7 @@
 
 			<!--//tab-->
 			<div id="fix_nav">
-				<ul id="tab_team">
+				<ul id="tab_group">
 					<li class="z_man current">
 						<a href="#">男子组</a>
 					</li>
@@ -244,10 +243,10 @@
 				})
 				//男子组女子组实现切换
 			 tab({
-					tabId: '#tab_team',
+					tabId: '#tab_group',
 					tabChild: 'li',
-					tabContentId: '#tab_team_content',
-					tabContentChid: '.tab_team_child',
+					tabContentId: '#tab_group_content',
+					tabContentChid: '.tab_group_child',
 					tabClass: 'current'
 				})
 				//男子组滚动
