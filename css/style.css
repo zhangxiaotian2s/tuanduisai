@@ -90,14 +90,14 @@ table,table td{ border:0;border-collapse: collapse;  }
 .img_td img{ width: 70%; margin: auto;}
 #cj_phb_table td p{ padding: 0px 5px;}
 
-#fix_nav{ width: 4.2rem;  height:4.2rem; background: #000; border-radius: 2.1rem; opacity: 0.7;
+#fix_nav{ width: 5.2rem;  height:5.2rem; background: #000; border-radius:2.6rem; opacity: 0.7;
  position: fixed; right:10px; bottom: 30px;
 }
 #fix_nav  a{ color: #FFFFFF;display: block; text-align: center;width: 90%; margin: auto; line-height: 1.5rem; font-size: 0.8rem;}
-#fix_nav .z_man {  padding-top:0.5rem ;}
+#fix_nav .z_man {  padding-top:0.8rem ;}
 #fix_nav .z_man a{  border-bottom: #FFFFFF solid 1px;  }
-#fix_nav .z_man.current{  line-height: 1.8rem; padding-top: 1.0rem;}
-#fix_nav .z_woman.current{  line-height: 1.8rem; padding-bottom: 0.5rem;}
+#fix_nav .z_man.current{  line-height: 2.2rem; padding-top: 1.4rem;}
+#fix_nav .z_woman.current{  line-height: 2.2rem; padding-bottom: 0.8rem;}
 #fix_nav .z_man.current a{font-size: 1.2rem;}
 #fix_nav .z_woman.current a{font-size: 1.2rem;}
 /*cfb_*/
